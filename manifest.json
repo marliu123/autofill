@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "AutoFill Extension",
+  "version": "1.0",
+  "description": "Autofills information on websites.",
+  "permissions": ["storage", "activeTab"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
