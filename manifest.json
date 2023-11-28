@@ -4,14 +4,15 @@
   "version": "1.0",
   "description": "Autofills information on websites.",
   "permissions": ["storage", "activeTab"],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+    "browser_action": {
+      "default_icon": "totoro.png",
+      "default_popup": "popup.html"
+    },
+    "default_popup": "popup.html",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["src/content.js"]
     }
   ]
 }
