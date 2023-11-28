@@ -1,17 +1,18 @@
-/* styles/popup.css */
 body {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   margin: 0;
   padding: 40px;
-  background-color: #f0e5e5; /* Light pastel pink */
-  color: #464646; /* Dark gray text */
+  background-color: #f0e5e5;
+  color: #464646;
+  width: 400px;
+  margin: 0 auto;
 }
 
 h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #3d3d3d; /* Slightly darker heading color */
+  color: #3d3d3d;
 }
 
 p {
@@ -19,10 +20,23 @@ p {
   margin-bottom: 30px;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label, input {
+  flex-basis: 48%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
 button {
-  padding: 15px 30px;
+  flex-basis: 100%;
+  padding: 15px;
   font-size: 18px;
-  background-color: #94d3ac; /* Pastel green */
+  background-color: #94d3ac;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -31,5 +45,5 @@ button {
 }
 
 button:hover {
-  background-color: #77bb8c; /* Slightly darker green on hover */
+  background-color: #77bb8c;
 }
