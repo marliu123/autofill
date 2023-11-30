@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-
   const personalInfoLink = document.getElementById('personalInfoLink');
   const creditCardLink = document.getElementById('creditCardLink');
   const personalInfoSection = document.getElementById('personalInfoSection');
   const creditCardSection = document.getElementById('creditCardSection');
   const autofillButton = document.getElementById('autofillButton');
 
-  showSection('personalInfo');
 
+
+  
+
+  showSection('personalInfo');
 
   personalInfoLink.addEventListener('click', function () {
     showSection('personalInfo');
@@ -18,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   autofillButton.addEventListener('click', function () {
-
     const personalInfoData = getFormData('personalInfoForm');
     const creditCardData = getFormData('creditCardForm');
 
